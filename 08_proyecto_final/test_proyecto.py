@@ -18,6 +18,14 @@ def probar_proyecto():
     else:
         print("❌ Error: Debería retornar None para texto.")
 
+    print("\nProbando obtener_dolar_blue (utils.py)...")
+    from utils import obtener_dolar_blue
+    dolar = obtener_dolar_blue()
+    if dolar:
+        print(f"✅ Dólar Blue obtenido: {dolar}")
+    else:
+        print("⚠️ No se pudo obtener el Dólar Blue (puede ser error de red).")
+
     # 2. Prueba de Modelos
     print("\n2. Probando Modelos (models.py)...")
     mi_cuenta = Cuenta()

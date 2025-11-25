@@ -26,6 +26,9 @@ while True:
         elif opcion_valida == 3 :
             balance = mi_cuenta.calcular_balance()
             print(f"Balance: {balance}")
+            valor_dolar_blue = obtener_dolar_blue()
+            if valor_dolar_blue:
+                print(f"Valor del dólar blue: {valor_dolar_blue}")
         elif opcion_valida == 4:
             break
         else:
